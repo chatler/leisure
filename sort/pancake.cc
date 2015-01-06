@@ -43,7 +43,6 @@ void pancakeSort(int *arr, int n)
 	}
 }
 
-/* 打印数组 */
 void printArray(int arr[], int n)
 {
 	for (int i = 0; i < n; ++i)
