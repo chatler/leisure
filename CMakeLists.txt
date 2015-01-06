@@ -26,7 +26,7 @@ set(CXX_FLAGS
  -Wpointer-arith
 # -Wshadow
  -Wwrite-strings
- -march=native
+ # -march=native
  # -MMD
  # -std=c++0x
  -rdynamic
@@ -59,5 +59,6 @@ string(TOUPPER ${CMAKE_BUILD_TYPE} BUILD_TYPE)
 message(STATUS "CXX_FLAGS = " ${CMAKE_CXX_FLAGS} " " ${CMAKE_CXX_FLAGS_${BUILD_TYPE}})
 
 #executables
+add_subdirectory(cc)
 add_subdirectory(sort)
 
