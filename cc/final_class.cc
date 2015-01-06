@@ -1,5 +1,7 @@
 // file final_class.cc
 
+//the link:
+//http://zhedahht.blog.163.com/blog/static/25411174200793181548842/
 
 // way one:not easy to use
 class FinalClass1
