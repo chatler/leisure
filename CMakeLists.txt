@@ -18,7 +18,7 @@ set(CXX_FLAGS
 # -DCMAKE_BUILD_BITS=32
  -Wall
 # -Wextra
- -Werror
+# -Werror
 # -Wconversion
  -Wno-unused-parameter
  -Wold-style-cast
