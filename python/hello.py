@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+import os, sys
+
+print sys.argv[1]
+
 print "hello shit guy!!!!"
 
 # test for raw input, just as cin in cpp
