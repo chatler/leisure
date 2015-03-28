@@ -7,4 +7,5 @@ add_executable(factorial factorial.cc)
 add_executable(fibonacci fibonacci.cc)
 add_executable(linklist_reverse linklist_reverse.cc)
 add_executable(maxSubSum maxSubSum.cc)
+add_executable(functional_test functional_test.cc)
 
