@@ -17,12 +17,15 @@ else
 	OS_BITS=32
 fi
 
-		mkdir -p $BUILD_DIR/$BUILD_TYPE											\
-	&&	cd $BUILD_DIR/$BUILD_TYPE												\
-	&&	cmake	-DCMAKE_BUILD_TYPE=$BUILD_TYPE									\
-				-DCMAKE_BUILD_NO_EXAMPLES=$BUILD_NO_EXAMPLES					\
-				-DCMAKE_INSTALL_PREFIX=$INSTALL_DIR								\
-				-DCMAKE_BUILD_BITS=${OS_BITS}									\
-				$SOURCE_DIR														\
-	&&	make -j${CPU_CNT}														\
+		mkdir -p $BUILD_DIR/$BUILD_TYPE							\
+	&&	cd $BUILD_DIR/$BUILD_TYPE								\
+	&&	cmake	-DCMAKE_BUILD_TYPE=$BUILD_TYPE					\
+				-DCMAKE_BUILD_NO_EXAMPLES=$BUILD_NO_EXAMPLES	\
+				-DCMAKE_INSTALL_PREFIX=$INSTALL_DIR				\
+				-DCMAKE_BUILD_BITS=${OS_BITS}					\
+				$SOURCE_DIR										\
+	&&	date > file												\
+	&&	make -j${CPU_CNT}										\
+	&&	date >> file											\
+	&&	cat file												\
 
