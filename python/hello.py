@@ -2,7 +2,7 @@
 
 import os, sys
 
-print sys.argv[1]
+print "this program is:",sys.argv[0]
 
 print "hello shit guy!!!!"
 
