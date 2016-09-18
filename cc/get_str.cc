@@ -19,6 +19,7 @@ char* GetString2()
 
 void testBranchPredictor()
 {
+	//http://stackoverflow.com/questions/11227809/why-is-it-faster-to-process-a-sorted-array-than-an-unsorted-array
 	const int arraySize = 32768;
 	int sum = 0;
 	int* data = new int[arraySize];
@@ -33,6 +34,8 @@ void testBranchPredictor()
 	   for (int c = 0; c < arraySize; ++c)
 	   if (data[c] >= 128)
 	   sum += data[c];
+
+	   sum += data[c] >=128 ? data[c] : 0;
 	   */
 
 	for (int c = 0; c < 2; ++c) {
