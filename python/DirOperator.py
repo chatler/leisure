@@ -10,16 +10,17 @@ import os
 print "file present:", sys.argv[0], "wo ri"
 
 
+
 def calMd5(afile):   
-	m = hashlib.md5()   
-	file = io.FileIO(afile,'r')
-bytes = file.read(1024)   
-while(bytes != b''):   
-m.update(bytes)   
-bytes = file.read(1024)    
-file.close()    
-md5value = m.hexdigest()   
-return  md5value
+    m = hashlib.md5()   
+    file = io.FileIO(afile,'r')
+    bytes = file.read(1024)   
+    while(bytes != b'')
+        m.update(bytes)
+    bytes = file.read(1024)    
+    file.close()    
+    md5value = m.hexdigest()   
+    return  md5value
 
 #def visitor(args, directoryName,filesInDirectory):     # called for each dir 
 #print "\t"*(args-1),directoryName
@@ -35,3 +36,4 @@ return  md5value
 #root=raw_input("type root directory:")
 #calDirMd5(root,0)
 
+print "hello"
